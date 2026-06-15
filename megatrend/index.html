@@ -426,30 +426,34 @@
         </div>
 
         <div>
-          <form class="contact-form" id="contactForm">
+          <form class="contact-form" id="contactForm"
+      action="https://formspree.io/f/maqzvlap"
+      method="POST">
             <!-- Name -->
             <div class="form-group">
-              <input type="text" id="nameInput" class="form-input" placeholder=" " required>
+              <input type="text" id="nameInput" name="name" class="form-input" placeholder=" " required>
               <label for="nameInput" class="form-label" data-i18n="formName">Име</label>
             </div>
             <!-- Email -->
             <div class="form-group">
-              <input type="email" id="emailInput" class="form-input" placeholder=" " required>
+              <input type="email" id="emailInput" name="email" class="form-input" placeholder=" " required>
               <label for="emailInput" class="form-label" data-i18n="formEmail">Имейл</label>
             </div>
                         <!-- Phone -->
                         <div class="form-group">
-                          <input type="tel" id="phoneInput" class="form-input" placeholder=" ">
+                          <input type="tel" id="phoneInput" name="phone" class="form-input" placeholder=" ">
                           <label for="phoneInput" class="form-label">Телефон <span class="form-optional">(опционално)</span></label>
                         </div>
             <!-- Website (optional) -->
             <div class="form-group">
-              <input type="url" id="websiteInput" class="form-input" placeholder=" ">
+              <input type="url" id="websiteInput" name="website" class="form-input" placeholder=" ">
               <label for="websiteInput" class="form-label"><span data-i18n="formWebsite">Уебсайт</span> <span class="form-optional" data-i18n="formOptional">(опционално)</span></label>
             </div>
             <!-- Message -->
+            <!-- Message -->
+<div class="form-group form-group--textarea">
             <div class="form-group form-group--textarea">
-              <textarea id="msgInput" class="form-input form-textarea" placeholder=" " rows="3" required></textarea>
+              <textarea id="msgInput" name="message" class="form-input form-textarea" placeholder=" " rows="3" required></textarea>
               <label for="msgInput" class="form-label" data-i18n="formMsg">Съобщение</label>
             </div>
 
@@ -461,6 +465,7 @@
               </div>
               <div class="slider-track-wrap">
                 <input type="range" id="budgetSlider" class="budget-slider" min="500" max="50000" step="500" value="1000">
+                <input type="hidden" id="budgetInput" name="budget">
                 <div class="slider-fill" id="sliderFill"></div>
               </div>
               <div class="slider-ticks">
