@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megatrend Digital | Performance Marketing Agency</title>
+  <meta name="description" content="Ние сме Megatrend Digital – перформънс маркетингова агенция за брандове, които искат да мащабират своя онлайн бизнес с измерим ROI и смели криейтиви.">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor">
+    <div class="custom-cursor-text">ВИЖ</div>
+  </div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Noise Background Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <a href="#" class="logo magnetic" id="headerLogo">
+      <img src="assets/logo-white.png" alt="Megatrend" class="logo-img">
+    </a>
+    <div class="header-actions">
+      <button class="lang-toggle magnetic" id="langToggle" aria-label="Switch language">GEN Z</button>
+      <button class="menu-trigger magnetic" id="menuBtn">
+        <span data-i18n="menu">МЕНЮ</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M3 6H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M3 18H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu overlay + bubble -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="nav-drawer" id="navDrawer">
+    <button class="drawer-close" id="drawerClose" data-i18n="close">ЗАТВОРИ</button>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="#" class="nav-link" data-i18n="navHome">НАЧАЛО</a></li>
+      <li class="nav-item"><a href="#works" class="nav-link" data-i18n="navWorks">ПРОЕКТИ</a></li>
+      <li class="nav-item"><a href="#services" class="nav-link" data-i18n="navServices">КАКВО ПРАВИМ</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link" data-i18n="navAbout">КОИ СМЕ НИЕ</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="navContact">КОНТАКТИ</a></li>
+    </ul>
+    
+    <div class="drawer-footer">
+      <div class="drawer-info">
+        <h4>Megatrend Digital</h4>
+      </div>
+      <div class="drawer-socials">
+        <a href="#" class="magnetic">LinkedIn</a>
+        <a href="#" class="magnetic">Instagram</a>
+        <a href="#" class="magnetic">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg">
+      <img src="assets/hero-bg.png" alt="" class="hero-bg-img">
+      <div class="hero-bg-gradient"></div>
+    </div>
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="container">
+      <h1 class="hero-title" id="heroTitle">
+        <div class="hero-line"><span data-i18n="heroLine1">ОНЛАЙН РЕКЛАМИ</span></div>
+        <div class="hero-line"><span class="hero-title-sub" data-i18n="heroLine3">КОИТО ПРАВЯТ</span></div>
+        <div class="hero-line"><span class="hero-title-mega" data-i18n="heroLine4">МЕГА МНОГО ПРОДАЖБИ</span></div>
+      </h1>
+      <a href="#contact" class="hero-cta-btn magnetic">
+        <span data-i18n="heroCta">СВЪРЖИ СЕ</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12H19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Logos Marquee Strip (reverse direction) -->
+  <div class="marquee-strip marquee-strip--logos">
+    <div class="marquee-track marquee-track--reverse">
+      <span class="marquee-logo-item"><img src="loga/82x82px_logo_1.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design-6.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design-5.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/82x82px_logo_2.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/parfen-svg.avif" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design-7.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design-4.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/82x82px_logo_6.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/82x82px_logo_1.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design-6.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design-5.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/82x82px_logo_2.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/parfen-svg.avif" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design-7.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design-4.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/82x82px_logo_6.png" alt="Partner logo"></span>
+      <span class="marquee-logo-item"><img src="loga/untitled-design.png" alt="Partner logo"></span>
+    </div>
+  </div>
+
+  <!-- Marquee Ticker Strip -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span class="marquee-item">META ADS</span>
+      <span class="marquee-item">GOOGLE ADS</span>
+      <span class="marquee-item">TIKTOK ADS</span>
+      <span class="marquee-item">SOCIAL MEDIA</span>
+      <span class="marquee-item">E-MAIL MARKETING</span>
+      <span class="marquee-item">WEB DEVELOPMENT</span>
+      <span class="marquee-item">BRANDING</span>
+      <span class="marquee-item">MARKETING STRATEGY</span>
+    </div>
+  </div>
+
+  <!-- Horizontal Scroll Section (Case Studies) -->
+  <section class="horizontal-scroll-container" id="works">
+    <div class="works-progress" id="worksProgress"></div>
+    <div class="slide-counter" id="slideCounter">
+      <span class="slide-counter-current" id="slideCounterNum">01</span>
+      <span>/ 04</span>
+    </div>
+    <div class="horizontal-scroll-wrapper" id="scrollWrapper">
+      
+      <div class="horizontal-slide case-slide">
+        <div class="slide-num">01</div>
+        <div class="slide-content">
+          <div class="slide-info case-reveal">
+            <span class="slide-tag">E-commerce Growth</span>
+            <h3>ЛУДИ ГЛАВИ</h3>
+            <p>
+              Мащабиран рекламен бюджет в социалните мрежи с фокус върху ROAS 4.8x. Оптимизирахме потребителската пътека и стартирахме динамични видео ремаркетинг фунии.
+            </p>
+            <a href="case-study-ludi-glavi.html" class="hero-cta-btn magnetic">
+              <span data-i18n="caseCta">КЪМ КЕЙС СТЪДИТО</span>
+            </a>
+          </div>
+          <div class="slide-media case-reveal">
+            <div class="slide-img-mock">
+              <img src="assets/ludiglavi.jpeg" alt="Луди Глави" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontal-slide case-slide">
+        <div class="slide-num">02</div>
+        <div class="slide-content">
+          <div class="slide-info case-reveal">
+            <span class="slide-tag">Lead Generation</span>
+            <h3>Dragon Print</h3>
+            <p>
+              Автоматизирани фунии за лийдове в LinkedIn и Google Search. Чрез A/B тестване на landing страници увеличихме конверсията двойно.
+            </p>
+            <a href="case-study-dragon-print.html" class="hero-cta-btn magnetic">
+              <span data-i18n="caseCta">КЪМ КЕЙС СТЪДИТО</span>
+            </a>
+          </div>
+          <div class="slide-media case-reveal">
+            <div class="slide-img-mock">
+              <img src="assets/dragonprint.jpeg" alt="Dragon Print" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontal-slide case-slide">
+        <div class="slide-num">03</div>
+        <div class="slide-content">
+          <div class="slide-info case-reveal">
+            <span class="slide-tag">SaaS Marketing</span>
+            <h3>ДЕТСКА АКАЕМИЯ SUPER KIDS</h3>
+            <p>
+              Глобална кампания в Google UAC, Apple Search Ads и TikTok Spark Ads. 120+ криейтив вариации в 14 държави.
+            </p>
+            <a href="case-study-super-kids.html" class="hero-cta-btn magnetic">
+              <span data-i18n="caseCta">КЪМ КЕЙС СТЪДИТО</span>
+            </a>
+          </div>
+          <div class="slide-media case-reveal">
+            <div class="slide-img-mock">
+              <img src="assets/superkids.jpeg" alt="Super Kids Academy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="horizontal-slide case-slide">
+        <div class="slide-num">04</div>
+        <div class="slide-content">
+          <div class="slide-info case-reveal">
+            <span class="slide-tag">E-commerce Scalability</span>
+            <h3>Liv.bg</h3>
+            <p>
+              Цялостна performance маркетинг стратегия, целяща максимален обхват и висока възвръщаемост на инвестициите за продуктовата гама.
+            </p>
+            <a href="case-study-liv-bg.html" class="hero-cta-btn magnetic">
+              <span data-i18n="caseCta">КЪМ КЕЙС СТЪДИТО</span>
+            </a>
+          </div>
+          <div class="slide-media case-reveal">
+            <div class="slide-img-mock">
+              <img src="assets/liv.jpeg" alt="Liv.bg" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Process Path Section -->
+  <section class="path-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span data-i18n="servicesTitle1">КАК ГО</span> <span data-i18n="servicesTitle2">ПРАВИМ</span></h2>
+        <div class="section-sub" data-i18n="servicesSub">да постигнем резултати преди края на първата седмица</div>
+      </div>
+
+      <div class="process-timeline" id="processTimeline">
+        <svg class="process-path-svg" viewBox="0 0 900 1120" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path class="process-path-bg" id="processPathBg" d="M450,20 C450,100 320,100 320,180 C320,260 450,200 450,280 C450,360 580,300 580,380 C580,460 450,400 450,480 C450,560 320,500 320,580 C320,660 450,600 450,680 C450,760 580,700 580,780 C580,860 450,820 450,900 C450,980 320,940 320,1020 C320,1080 450,1060 450,1120" fill="none"/>
+          <path class="process-path-glow" id="processPathGlow" d="M450,20 C450,100 320,100 320,180 C320,260 450,200 450,280 C450,360 580,300 580,380 C580,460 450,400 450,480 C450,560 320,500 320,580 C320,660 450,600 450,680 C450,760 580,700 580,780 C580,860 450,820 450,900 C450,980 320,940 320,1020 C320,1080 450,1060 450,1120" fill="none"/>
+        </svg>
+
+        <div class="process-step process-step--left" data-step="1">
+          <div class="process-step-circle">
+            <span class="process-step-num">01</span>
+          </div>
+          <div class="process-step-card">
+            <p data-i18n="pathStep1">Одит<br>до 24 часа</p>
+          </div>
+        </div>
+        <div class="process-step process-step--right" data-step="2">
+          <div class="process-step-circle">
+            <span class="process-step-num">02</span>
+          </div>
+          <div class="process-step-card">
+            <p data-i18n="pathStep2">Прогнози и цели<br>до 48</p>
+          </div>
+        </div>
+        <div class="process-step process-step--left" data-step="3">
+          <div class="process-step-circle">
+            <span class="process-step-num">03</span>
+          </div>
+          <div class="process-step-card">
+            <p data-i18n="pathStep3">Маркетинг план<br>до 72</p>
+          </div>
+        </div>
+        <div class="process-step process-step--right" data-step="4">
+          <div class="process-step-circle">
+            <span class="process-step-num">04</span>
+          </div>
+          <div class="process-step-card">
+            <p data-i18n="pathStep4">Старт на първите реклами<br>92 часа</p>
+          </div>
+        </div>
+        <div class="process-step process-step--left" data-step="5">
+          <div class="process-step-circle">
+            <span class="process-step-num">05</span>
+          </div>
+          <div class="process-step-card">
+            <p data-i18n="pathStep5">Първи резултати от нашата работа<br>до 168 часа</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Path CTA Section -->
+    <section class="path-cta-section">
+      <div class="container">
+        <div class="path-cta-inner">
+          <div class="path-cta-label" data-i18n="pathCtaLabel">СЛЕДВАЩА СТЪПКА</div>
+          <h2 class="path-cta-heading">
+            <span data-i18n="pathCtaLine1">НЕКА ДА</span>
+            <span class="path-cta-accent" data-i18n="pathCtaLine2">ПОГОВОРИМ</span>
+          </h2>
+          <p class="path-cta-sub" data-i18n="pathCtaSub">Разкажи ни за бизнеса си и ние ще ти кажем честно как можем да го развием заедно.</p>
+          <a href="#contact" class="hero-cta-btn magnetic">
+            <span data-i18n="pathCtaBtn">СВЪРЖИ СЕ С НАС</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>  
+
+  <!-- Interactive Stats Board -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num" id="stat1">0</div>
+          <div class="stat-label" data-i18n="stat1">ROAS · СРЕДНО ЗА ВСИЧКИ АКАУНТИ</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat2">0</div>
+          <div class="stat-label" data-i18n="stat2">УСПЕВАЕМОСТ</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat3">0</div>
+          <div class="stat-label" data-i18n="stat3">ПРИХОДИ ОТ НАЧАЛОТО</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat4">0</div>
+          <div class="stat-label" data-i18n="stat4">ОНЛАЙН МАГАЗИНА</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span data-i18n="testTitle1">НОСЯТ СЕ</span> <span data-i18n="testTitle2">СЛУХОВЕ</span></h2>
+        <div class="section-sub" data-i18n="testSub">с които не можем да спорим</div>
+      </div>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card" data-tilt="1">
+          <div class="testimonial-inner">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-i18n="test1text">Препоръчвам с две ръце!!! Професионалист в работата си! Издигна моите социални мрежи на високо ниво.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">IP</div>
+              <div>
+                <strong data-i18n="test1name">Artifox Studio</strong>
+                <span data-i18n="test1role">Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-tilt="2">
+          <div class="testimonial-inner">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-i18n="test2text">Изключително съм доволен от услугите на фирма Mega Trend Digital. Екипът работи професионално и реагира бързо при възникнали последващи въпроси и проблеми. Отново бих се възползвал от техните услуги за управление на рекламни ми акаунти в Meta и Google.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">bp</div>
+              <div>
+                <strong data-i18n="test2name">bgpampersi</strong>
+                <span data-i18n="test2role">Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-tilt="3">
+          <div class="testimonial-inner">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-i18n="test3text">Невероятни професионалисти! Това, което получих и продължавам да получавам като услуга, е над обичайното ниво за българския пазар.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">PG</div>
+              <div>
+                <strong data-i18n="test3name">Петър Гроздев</strong>
+                <span data-i18n="test3role">Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span data-i18n="aboutTitle1">КОИ</span> <span data-i18n="aboutTitle2">СМЕ НИЕ</span></h2>
+      </div>
+      <div class="about-text" id="aboutText" data-i18n="aboutText">
+        Performance екип за онлайн магазини, заседнали на плато. Извеждаме бизнеси от 10–20K евро оборот с проактивна ежедневна работа, не outsourced ads, а система за растеж. 150+ магазина. 40M+ приходи. Без компромис с резултатите.
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact overlap wrapper -->
+  <div class="contact-overlap-zone" id="contactOverlapZone">
+  <!-- Chalk scratch transition -->
+  <div class="chalk-bridge" id="chalkBridge">
+    <svg class="chalk-svg" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+      <path class="chalk-path" id="chalkPath1" d="M-20,120 Q200,40 400,100 T800,80 T1200,110 T1500,60" fill="none"/>
+      <path class="chalk-path chalk-path--2" id="chalkPath2" d="M-20,140 Q300,180 550,130 T950,150 T1300,100 T1500,130" fill="none"/>
+    </svg>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card" id="contactCard">
+        <div class="contact-layout">
+        
+        <div class="contact-header">
+          <h2 data-i18n="contactHeading">СВЪРЖИ СЕ С НАС</h2>
+          <p data-i18n="contactDesc">
+            Не работим с всеки. Работим само с брандове, които са готови да инвестират, да тестват агресивно и да скалират сериозно. Ако това си ти – свържи се с нас.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <h4 data-i18n="contactEmailLabel">ПИШИ НИ</h4>
+              <a href="mailto:hello@megatrenddigital.com" class="magnetic">office@megatrenddigital.com</a>
+            </div>
+            <div class="contact-info-item">
+              <h4 data-i18n="contactPhoneLabel">ОБАДИ СЕ</h4>
+              <a href="tel:+359888888888" class="magnetic">+359 877 722 096</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form class="contact-form" id="contactForm">
+            <!-- Name -->
+            <div class="form-group">
+              <input type="text" id="nameInput" class="form-input" placeholder=" " required>
+              <label for="nameInput" class="form-label" data-i18n="formName">Име</label>
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+              <input type="email" id="emailInput" class="form-input" placeholder=" " required>
+              <label for="emailInput" class="form-label" data-i18n="formEmail">Имейл</label>
+            </div>
+                        <!-- Phone -->
+                        <div class="form-group">
+                          <input type="tel" id="phoneInput" class="form-input" placeholder=" ">
+                          <label for="phoneInput" class="form-label">Телефон <span class="form-optional">(опционално)</span></label>
+                        </div>
+            <!-- Website (optional) -->
+            <div class="form-group">
+              <input type="url" id="websiteInput" class="form-input" placeholder=" ">
+              <label for="websiteInput" class="form-label"><span data-i18n="formWebsite">Уебсайт</span> <span class="form-optional" data-i18n="formOptional">(опционално)</span></label>
+            </div>
+            <!-- Message -->
+            <div class="form-group form-group--textarea">
+              <textarea id="msgInput" class="form-input form-textarea" placeholder=" " rows="3" required></textarea>
+              <label for="msgInput" class="form-label" data-i18n="formMsg">Съобщение</label>
+            </div>
+
+            <!-- Budget Slider -->
+            <div class="form-group form-group--slider">
+              <div class="slider-header">
+                <span class="slider-label" data-i18n="formBudget">Месечен бюджет за реклама (€)</span>
+                <span class="slider-value" id="budgetDisplay">1 000 €</span>
+              </div>
+              <div class="slider-track-wrap">
+                <input type="range" id="budgetSlider" class="budget-slider" min="500" max="50000" step="500" value="1000">
+                <div class="slider-fill" id="sliderFill"></div>
+              </div>
+              <div class="slider-ticks">
+                <span>500€</span>
+                <span>10K€</span>
+                <span>25K€</span>
+                <span>50K€+</span>
+              </div>
+            </div>
+
+            <!-- Service chips -->
+            <div class="form-group form-group--chips">
+              <div class="chips-label" data-i18n="formService">Избери услуга</div>
+              <div class="chips-grid" id="serviceChips">
+                <button type="button" class="chip" data-value="Meta Ads">Meta Ads</button>
+                <button type="button" class="chip" data-value="Google Ads">Google Ads</button>
+                <button type="button" class="chip" data-value="TikTok Ads">TikTok Ads</button>
+                <button type="button" class="chip" data-value="Social Media">Social Media</button>
+                <button type="button" class="chip" data-value="E-mail Marketing">E-mail Marketing</button>
+                <button type="button" class="chip" data-value="Marketing Strategy">Marketing Strategy</button>
+                <button type="button" class="chip" data-value="Branding">Branding</button>
+                <button type="button" class="chip" data-value="Web Development">Web Development</button>
+              </div>
+              <input type="hidden" id="serviceInput" name="service">
+            </div>
+
+            <button type="submit" class="submit-btn magnetic" data-i18n="formSubmit">ИЗПРАТИ ЗАПИТВАНЕ</button>
+          </form>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <img src="assets/logo-white.png" alt="Megatrend" class="footer-logo-img">
+        <div class="footer-socials">
+          <a href="#" class="magnetic">LinkedIn</a>
+          <a href="#" class="magnetic">Instagram</a>
+          <a href="#" class="magnetic">Facebook</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p data-i18n="footerCopy">© 2026 Megatrend Digital. Всички права запазени.<br>
+        100% независима перформънс маркетинг агенция.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

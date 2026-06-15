@@ -1,0 +1,130 @@
+<svg viewBox="0 0 1000 500" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="background:#09090d; font-family: 'Outfit', 'Inter', -apple-system, sans-serif;">
+  <defs>
+    <!-- Blur filters -->
+    <filter id="blur-medium">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+    <filter id="blur-heavy">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0e14"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </linearGradient>
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14141c"/>
+      <stop offset="100%" stop-color="#111116"/>
+    </linearGradient>
+    <linearGradient id="line-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fd8400"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Grid Background -->
+  <rect width="1000" height="500" rx="16" fill="url(#bg-grad)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5"/>
+  
+  <!-- Grid Lines -->
+  <g stroke="rgba(255, 255, 255, 0.02)" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="500" />
+    <line x1="150" y1="0" x2="150" y2="500" />
+    <line x1="250" y1="0" x2="250" y2="500" />
+    <line x1="350" y1="0" x2="350" y2="500" />
+    <line x1="450" y1="0" x2="450" y2="500" />
+    <line x1="550" y1="0" x2="550" y2="500" />
+    <line x1="650" y1="0" x2="650" y2="500" />
+    <line x1="750" y1="0" x2="750" y2="500" />
+    <line x1="850" y1="0" x2="850" y2="500" />
+    <line x1="950" y1="0" x2="950" y2="500" />
+    <line x1="0" y1="100" x2="1000" y2="100" />
+    <line x1="0" y1="200" x2="1000" y2="200" />
+    <line x1="0" y1="300" x2="1000" y2="300" />
+    <line x1="0" y1="400" x2="1000" y2="400" />
+  </g>
+
+  <!-- Top Navigation Bar -->
+  <rect x="0" y="0" width="1000" height="55" rx="16" fill="url(#header-grad)"/>
+  <rect x="0" y="45" width="1000" height="10" fill="url(#header-grad)"/>
+  <line x1="0" y1="55" x2="1000" y2="55" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  
+  <!-- Logo, Breadcrumbs, Status -->
+  <circle cx="30" cy="28" r="8" fill="#fd8400" opacity="0.85"/>
+  <circle cx="30" cy="28" r="4" fill="#ffffff"/>
+  <text x="50" y="32" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="0.5">Meta Ads Manager</text>
+  <text x="195" y="31" fill="rgba(255,255,255,0.2)" font-size="14">/</text>
+  <text x="215" y="32" fill="rgba(255,255,255,0.5)" font-size="12">Dragon Print (75 дни след старт)</text>
+  
+  <rect x="830" y="13" width="145" height="28" rx="6" fill="#1a1a24" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <text x="845" y="30" fill="rgba(255,255,255,0.7)" font-size="11" font-weight="600">75-дневен период</text>
+  <path d="M952 22 l3 3 l3 -3" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" fill="none"/>
+
+  <!-- KPI CARDS CONTAINER -->
+  <!-- KPI Card 1: Бюджет -->
+  <rect x="35" y="80" width="210" height="90" rx="10" fill="#12121a" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+  <text x="55" y="110" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700" letter-spacing="1">ДНЕВЕН БЮДЖЕТ</text>
+  <text x="55" y="145" fill="#ffffff" font-size="24" font-weight="800">270.00 €</text>
+
+  <!-- KPI Card 2: Продажби -->
+  <rect x="270" y="80" width="210" height="90" rx="10" fill="#12121a" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+  <text x="290" y="110" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700" letter-spacing="1">РЕЗУЛТАТИ (ПОКУПКИ)</text>
+  <text x="290" y="145" fill="#ffffff" font-size="24" font-weight="800" filter="url(#blur-medium)">1428</text>
+  <text x="355" y="145" fill="#ffffff" font-size="20" font-weight="800" opacity="0.3">бр.</text>
+
+  <!-- KPI Card 3: CPA (Цена за придобиване) -->
+  <rect x="505" y="80" width="210" height="90" rx="10" fill="#12121a" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+  <text x="525" y="110" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700" letter-spacing="1">ЦЕНА ЗА РЕЗУЛТАТ (CPA)</text>
+  <text x="525" y="145" fill="#10b981" font-size="24" font-weight="800">8.28 €</text>
+
+  <!-- KPI Card 4: ROAS -->
+  <rect x="740" y="80" width="225" height="90" rx="10" fill="#12121a" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" style="filter: drop-shadow(0px 4px 15px rgba(253, 132, 0, 0.15));"/>
+  <text x="760" y="110" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700" letter-spacing="1">ВЪЗВРЪЩАЕМОСТ (ROAS)</text>
+  <text x="760" y="145" fill="#fd8400" font-size="26" font-weight="900">4.30x</text>
+  <text x="840" y="140" fill="#fd8400" font-size="11" font-weight="700">МАЩАБИРАН</text>
+
+  <!-- CHART SECTION -->
+  <rect x="35" y="190" width="930" height="150" rx="10" fill="#12121a" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+  <text x="55" y="220" fill="rgba(255,255,255,0.7)" font-size="12" font-weight="700" letter-spacing="0.5">Ефективност по дни (75 дни мащабиране)</text>
+  
+  <!-- Line Chart Path (Exponential trend) -->
+  <path d="M 60 320 C 120 310 180 300 240 280 C 350 250 450 210 580 160 C 690 120 800 100 940 70" fill="none" stroke="url(#line-grad)" stroke-width="4.5" stroke-linecap="round" style="filter: drop-shadow(0px 4px 8px rgba(253, 132, 0, 0.35));"/>
+  
+  <!-- Chart Area fill -->
+  <path d="M 60 320 C 120 310 180 300 240 280 C 350 250 450 210 580 160 C 690 120 800 100 940 70 L 940 330 L 60 330 Z" fill="rgba(253, 132, 0, 0.04)" />
+  
+  <!-- Dots on Chart -->
+  <circle cx="580" cy="160" r="4.5" fill="#fd8400"/>
+  <circle cx="940" cy="70" r="5" fill="#10b981" style="filter: drop-shadow(0px 0px 8px #10b981);"/>
+
+  <!-- TABLE SECTION -->
+  <rect x="35" y="360" width="930" height="115" rx="10" fill="#12121a" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+  
+  <!-- Table Header -->
+  <text x="55" y="385" fill="rgba(255,255,255,0.3)" font-size="10" font-weight="800" letter-spacing="0.5">СТАТУС</text>
+  <text x="120" y="385" fill="rgba(255,255,255,0.3)" font-size="10" font-weight="800" letter-spacing="0.5">ИМЕ НА КАМПАНИЯТА</text>
+  <text x="400" y="385" fill="rgba(255,255,255,0.3)" font-size="10" font-weight="800" letter-spacing="0.5">БЮДЖЕТ</text>
+  <text x="530" y="385" fill="rgba(255,255,255,0.3)" font-size="10" font-weight="800" letter-spacing="0.5">РЕЗУЛТАТИ</text>
+  <text x="660" y="385" fill="rgba(255,255,255,0.3)" font-size="10" font-weight="800" letter-spacing="0.5">ЦЕНА НА РЕЗУЛТАТ</text>
+  <text x="800" y="385" fill="rgba(255,255,255,0.3)" font-size="10" font-weight="800" letter-spacing="0.5">ИЗРАЗХОДВАНА СУМА</text>
+  <text x="920" y="385" fill="rgba(255,255,255,0.3)" font-size="10" font-weight="800" letter-spacing="0.5">ROAS</text>
+  
+  <line x1="35" y1="395" x2="965" y2="395" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  
+  <!-- Row 1 -->
+  <circle cx="63" cy="417" r="4.5" fill="#10b981" style="filter: drop-shadow(0px 0px 4px #10b981);"/>
+  <text x="120" y="421" fill="#ffffff" font-size="12" font-weight="700" filter="url(#blur-medium)">DP - Performance Video Ads - TOF - CBO</text>
+  <text x="400" y="421" fill="#ffffff" font-size="12" font-weight="600">180.00 € / ден</text>
+  <text x="530" y="421" fill="#ffffff" font-size="12" filter="url(#blur-medium)">980 покупки</text>
+  <text x="660" y="421" fill="#10b981" font-size="12" font-weight="600">8.12 €</text>
+  <text x="800" y="421" fill="#ffffff" font-size="12" filter="url(#blur-medium)">7,957.60 €</text>
+  <text x="920" y="421" fill="#10b981" font-size="12" font-weight="700">4.52x</text>
+
+  <!-- Row 2 -->
+  <circle cx="63" cy="447" r="4.5" fill="#10b981" style="filter: drop-shadow(0px 0px 4px #10b981);"/>
+  <text x="120" y="451" fill="#ffffff" font-size="12" font-weight="700" filter="url(#blur-medium)">DP - Retargeting Funnel - CBO</text>
+  <text x="400" y="451" fill="#ffffff" font-size="12" font-weight="600">90.00 € / ден</text>
+  <text x="530" y="451" fill="#ffffff" font-size="12" filter="url(#blur-medium)">448 покупки</text>
+  <text x="660" y="451" fill="#10b981" font-size="12" font-weight="600">8.62 €</text>
+  <text x="800" y="451" fill="#ffffff" font-size="12" filter="url(#blur-medium)">3,861.76 €</text>
+  <text x="920" y="451" fill="#10b981" font-size="12" font-weight="700">3.82x</text>
+</svg>
